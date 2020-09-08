@@ -15,6 +15,13 @@ def myMin(a, b):
   return a if a < b else b
 #Rq : en général on l'écrira plutôt avec une fonction anonyme, mais c'est juste une habitude :
 myMin = lambda a, b: a if a < b else b
+#Versions curryfiées :
+def myMin(a):
+  def f(b):
+    return a if a < b else b
+  return f
+
+myMin = lambda a: lambda b: a if a < b else b
 
 #Déclaration locales impossibles si on veut rester sur un style fonctionnel
 
