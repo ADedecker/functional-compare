@@ -1,0 +1,8 @@
+[package]
+name = "functional-compare"
+version = "0.1"
+lean_version = "leanprover-community/lean:3.19.0"
+path = "src"
+
+[dependencies]
+mathlib = {git = "https://github.com/leanprover-community/mathlib", rev = "b2ec2b0cf3cd8a61ebf4465dceb92ffac72b3bca"}
