@@ -11,6 +11,8 @@ val cube = {x: Int -> x * x * x}
 
 //Fonction à plusieurs arguments, if-then-else
 fun myMin(a: Int, b: Int) = if (a < b) a else b
+//Version curryfiée :
+fun myMin(a: Int) = {b: Int -> if (a < b) a else b}
 
 //Déclarations locales inextantes quand on veut coder uniquement en fonctionnel
 
